@@ -75,7 +75,7 @@ Follow these steps to set up the `lessonLMS` theme on your WordPress installatio
     Bash
     
     ```
-    git clone https://github.com/[your-username]/lessonLMS.git
+    git clone https://github.com/nayemspecial/lessonLMS.git
     ```
     
 2. Upload Theme:
