@@ -8,7 +8,7 @@
 function lessonlms_customize_register( $wp_customize ) {
 
     $theme_dir = get_template_directory();
-    $folder    = '/inc/customizer/';
+    $folder    = '/inc/customizer/sections/';
 
     $files = array(
         'hero.php',

@@ -9,25 +9,10 @@
             </h2>
          </div>
 
-        <?php if( have_posts() ) : ?>
-            <div class="blog-list">
-                <?php while( have_posts() ) : the_post(); ?>
-                    <article class="blog-item">
-                        <div class="blog-heading">
-                            <h3 class="blog-title">
-                                <a href="<?php the_permalink(); ?>">
-                                    <?php the_title(); ?>
-                                </a>
-                            </h3>
-                        </div>
-
-                        <div class="blog-excerpt">
-                            <?php the_excerpt(); ?>
-                        </div>
-                    </article>
-                <?php endwhile; ?>
-            </div>
-        <?php else : ?>
+        <?php if( have_posts() ) :
+            get_template_part('template-parts/content/blog-card');
+             else : 
+             ?>
             <p class="no-results">
                 <?php _e('No results found','lessonlms'); ?>
             </p>

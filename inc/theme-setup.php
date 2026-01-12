@@ -4,8 +4,7 @@
      * 
      * @package lessonlms
      */
-
-
+    
     function lessonlms_theme_registration() {
 
         add_theme_support( 'post-thumbnails' );

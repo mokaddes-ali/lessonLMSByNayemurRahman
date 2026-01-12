@@ -1,7 +1,6 @@
 <?php get_header(); ?>    
 
 <?php while(have_posts()) : the_post() ?>
-
     <?php
     $price = get_post_meta(get_the_ID(), 'price', true) ?: '0.00';
     $original_price = get_post_meta(get_the_ID(), 'original_price', true) ?: '';
